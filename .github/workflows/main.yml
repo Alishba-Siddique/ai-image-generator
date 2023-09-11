@@ -28,6 +28,8 @@ jobs:
         env:
           REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
         run: |
+          git config --global user.name "Alishba-Siddique"
+          git config --global user.email "alishbasiddique07@gmail.com"
           # Install sed (assuming Ubuntu-based environment)
           sudo apt-get update
           sudo apt-get install -y sed
