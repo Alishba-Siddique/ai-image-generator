@@ -1,0 +1,37 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        env:
+          REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
+        run: |
+          # Install sed (assuming Ubuntu-based environment)
+          sudo apt-get update
+          sudo apt-get install -y sed
+
+          # Replace REACT_APP_OPENAI_API_KEY with the secret value
+          sed -i 's/REACT_APP_OPENAI_API_KEY/'"$REACT_APP_OPENAI_API_KEY"'/g' build/index.html
+          npm run deploy
