@@ -17,6 +17,10 @@ cd ai-image-generator
 ```
 
  ```shell
+npm install openai@^4.0.0
+```
+
+ ```shell
 npm start
 ```
 
