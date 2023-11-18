@@ -1,20 +1,14 @@
-# AI Image Generator
-
-## It is a AI Image generator using DALL-E v4 API
-
-![image](https://github.com/Alishba-Siddique/ai-image-generator/assets/97811058/f0fc02a9-6156-4c94-ad5f-81ee849c30af)
-
+### Tahir Waheed Portfolio Website
 
 ## Installation Guide
 
 ### Requirements
 - [Nodejs](https://nodejs.org/en/download)
-- [OPEN AI API](https://nodejs.org/en/download)
+- [VS Code](https://code.visualstudio.com/Download)
 
- ```shell
-git clone https://github.com/Alishba-Siddique/ai-image-generator
-cd ai-image-generator
-```
+# Download the folder and Open it in VS Code
+
+# Open Terminal
 
  ```shell
 npm start
