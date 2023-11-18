@@ -1,4 +1,4 @@
-### Tahir Waheed Portfolio Website
+# Tahir Waheed Portfolio Website
 
 ## Installation Guide
 
@@ -6,9 +6,9 @@
 - [Nodejs](https://nodejs.org/en/download)
 - [VS Code](https://code.visualstudio.com/Download)
 
-# Download the folder and Open it in VS Code
+### Download the folder and Open it in VS Code
 
-# Open Terminal
+### Open Terminal
 
  ```shell
 npm start
